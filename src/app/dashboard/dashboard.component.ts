@@ -38,4 +38,8 @@ export class DashboardComponent {
     card.cols = 2;
     card.rows = 2;
   }
+
+  isExpanded(card: DashboardCard): boolean {
+    return card.cols === 2 && card.rows === 2;
+  }
 }

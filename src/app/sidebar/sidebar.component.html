@@ -15,6 +15,11 @@
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
       <span>angular-dashboard</span>
+      <span class="spacer"></span>
+      <mat-icon *ngIf="darkModeEnabled">light_mode</mat-icon>
+      <mat-slide-toggle [(ngModel)]="darkModeEnabled" (change)="themeToggled($event)">
+        <mat-icon *ngIf="!darkModeEnabled">dark_mode</mat-icon>
+      </mat-slide-toggle>
     </mat-toolbar>
     <!-- Add Content Here -->
     <app-dashboard></app-dashboard>

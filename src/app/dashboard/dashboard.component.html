@@ -11,7 +11,7 @@
               <mat-icon>more_vert</mat-icon>
             </button>
             <mat-menu #menu="matMenu" xPosition="before">
-              <button (click)="onExpand(card)" mat-menu-item>Expand</button>
+              <button (click)="onExpand(card)" mat-menu-item [disabled]="isExpanded(card)">Expand</button>
               <button (click)="onRemove(card)" mat-menu-item>Remove</button>
             </mat-menu>
           </mat-card-title>
