@@ -14,16 +14,25 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { VerticalBarChartComponent } from './vertical-bar-chart/vertical-bar-chart.component';
+import { PieChartComponent } from './pie-chart/pie-chart.component';
+import { LineChartComponent } from './line-chart/line-chart.component';
+import { GaugeChartComponent } from './gauge-chart/gauge-chart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
-    DashboardComponent
+    DashboardComponent,
+    VerticalBarChartComponent,
+    PieChartComponent,
+    LineChartComponent,
+    GaugeChartComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +48,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    NgxChartsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

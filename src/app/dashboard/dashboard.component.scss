@@ -8,6 +8,8 @@
   left: 15px;
   right: 15px;
   bottom: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
 .more-button {
@@ -17,5 +19,11 @@
 }
 
 .dashboard-card-content {
+  height: 100%;
   text-align: center;
+
+  div {
+    // background-color: red;
+    height: 100%;
+  }
 }
